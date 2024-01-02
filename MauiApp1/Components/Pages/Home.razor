@@ -1,0 +1,17 @@
+﻿@page "/"
+
+<h3>Welcome to the Security Center.</h3>
+
+<p>System Scan</p>
+<btn class="btn btn-primary" @onclick="QuickScan">Quick Scan</btn>
+<btn class="btn btn-primary" @onclick="FullScan">Full Scan</btn>
+<btn class="btn btn-primary">@status</btn>
+
+<br />
+<br />
+
+<p>Network Settings</p>
+<button class="btn btn-primary" @onclick="BMalware">Block Malware</button>
+<button class="btn btn-primary" @onclick="BAdult">Block Malware and Adult Content</button>
+<button class="btn btn-primary" @onclick="BAds">Block Ads</button>
+<button class="btn btn-primary" @onclick="Reset">Reset All</button>
